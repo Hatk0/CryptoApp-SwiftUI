@@ -8,6 +8,7 @@ struct HomeView: View {
                 TopMoversView()
                 
                 // All coins
+                AllCoinsView()
             }
             .navigationTitle("Live Prices")
         }

@@ -22,7 +22,7 @@ struct TopMoversItemView: View {
             }
             
             // Coin percentage information
-            Text("+ 0,84 %")
+            Text("+0,84 %")
                 .font(.title2)
                 .foregroundStyle(.green)
         }
