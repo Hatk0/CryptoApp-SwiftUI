@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  CryptoApp-SwiftUI
-//
-//  Created by Dmitry Yastrebov on 11.02.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
