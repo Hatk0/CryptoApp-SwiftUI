@@ -1,10 +1,10 @@
 import Foundation
 
-enum CoinError: CoinError, LocalizedError {
+enum CoinError: Error, LocalizedError {
     case invalidURL
     case serverError
     case invalidData
-    case unknown(CoinError)
+    case unknown(Error)
     
     var errorDescription: String? {
         switch self {
