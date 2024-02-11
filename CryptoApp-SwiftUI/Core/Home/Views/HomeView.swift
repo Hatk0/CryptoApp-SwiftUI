@@ -2,7 +2,16 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                // Top Movers
+                TopMoversView()
+                
+                // All coins
+                AllCoinsView()
+            }
+            .navigationTitle("Live Prices")
+        }
     }
 }
 
