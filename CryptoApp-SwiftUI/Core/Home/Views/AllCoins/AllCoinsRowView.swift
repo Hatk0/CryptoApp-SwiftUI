@@ -32,12 +32,12 @@ struct AllCoinsRowView: View {
             
             // Coin price & percentage information
             VStack(alignment: .trailing, spacing: 4) {
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.headline)
                 
-                Text("\(coin.priceChangePercentage24H)")
+                Text(coin.priceChangePercentage24H.toPercent())
                     .font(.caption)
-                    .foregroundStyle(.green)
+                    .foregroundStyle(coin.priceChangePercentage24H > 0 ? .green : .red)
             }
         }
         .padding(.horizontal)

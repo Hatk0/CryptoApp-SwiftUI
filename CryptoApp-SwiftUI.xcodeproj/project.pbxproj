@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7335A4D22B7A9EAD00929EBC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7335A4D12B7A9EAD00929EBC /* Kingfisher */; };
+		7335A4D42B7A9FC900929EBC /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7335A4D32B7A9FC900929EBC /* Double+Ext.swift */; };
 		734850D72B791EB500438880 /* CryptoApp_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734850D62B791EB500438880 /* CryptoApp_SwiftUIApp.swift */; };
 		734850D92B791EB500438880 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734850D82B791EB500438880 /* ContentView.swift */; };
 		734850DB2B791EB600438880 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734850DA2B791EB600438880 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7335A4D32B7A9FC900929EBC /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
 		734850D32B791EB500438880 /* CryptoApp-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CryptoApp-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		734850D62B791EB500438880 /* CryptoApp_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp_SwiftUIApp.swift; sourceTree = "<group>"; };
 		734850D82B791EB500438880 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		734850E72B79200000438880 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7335A4D32B7A9FC900929EBC /* Double+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				734850F62B79271100438880 /* AllCoinsView.swift in Sources */,
 				734850ED2B7920A800438880 /* HomeView.swift in Sources */,
 				734850FB2B7932F400438880 /* HomeViewModel.swift in Sources */,
+				7335A4D42B7A9FC900929EBC /* Double+Ext.swift in Sources */,
 				734850D92B791EB500438880 /* ContentView.swift in Sources */,
 				734850D72B791EB500438880 /* CryptoApp_SwiftUIApp.swift in Sources */,
 				734850F12B79225F00438880 /* TopMoversItemView.swift in Sources */,
