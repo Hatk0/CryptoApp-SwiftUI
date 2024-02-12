@@ -1,4 +1,5 @@
 import SwiftUI
+import Kingfisher
 
 struct TopMoversItemView: View {
     let coin: Coin
@@ -6,7 +7,7 @@ struct TopMoversItemView: View {
     var body: some View {
         VStack(alignment: .leading ,spacing: 5) {
             // Image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .frame(width: 32, height: 32)
                 .foregroundStyle(.orange)
