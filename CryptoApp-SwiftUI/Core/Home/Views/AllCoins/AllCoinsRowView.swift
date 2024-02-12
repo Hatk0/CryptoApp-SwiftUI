@@ -1,15 +1,18 @@
 import SwiftUI
+import Kingfisher
 
 struct AllCoinsRowView: View {
+    let coin: Coin
+    
     var body: some View {
         HStack {
             // ID
-            Text("1")
+            Text("\(coin.marketCapRank)")
                 .font(.caption)
                 .foregroundStyle(.secondary)
             
             // Image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .scaledToFit()
                 .frame(width: 32, height: 32)
@@ -17,10 +20,10 @@ struct AllCoinsRowView: View {
             
             // Coin information
             VStack(alignment: .leading, spacing: 4) {
-                Text("Bitcoin")
+                Text(coin.name)
                     .font(.headline)
                 
-                Text("BTC")
+                Text(coin.symbol.uppercased())
                     .font(.caption)
             }
             .padding(.leading, 2)
@@ -29,19 +32,15 @@ struct AllCoinsRowView: View {
             
             // Coin price & percentage information
             VStack(alignment: .trailing, spacing: 4) {
-                Text("$48 166,70")
+                Text(coin.currentPrice.toCurrency())
                     .font(.headline)
                 
-                Text("+ 0,84 %")
+                Text(coin.priceChangePercentage24H.toPercent())
                     .font(.caption)
-                    .foregroundStyle(.green)
+                    .foregroundStyle(coin.priceChangePercentage24H > 0 ? .green : .red)
             }
         }
         .padding(.horizontal)
         .padding(.vertical, 4)
     }
-}
-
-#Preview {
-    AllCoinsRowView()
 }
